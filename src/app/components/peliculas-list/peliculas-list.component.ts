@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import movies from '../../../assets/movies.json';
 import { Router } from '@angular/router';
 import { PeliculasService } from 'src/app/services/peliculas.service';
 

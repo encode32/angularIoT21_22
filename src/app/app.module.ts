@@ -12,11 +12,13 @@ import { SeriesListComponent } from './components/series-list/series-list.compon
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
 import { SerieComponent } from './components/serie/serie.component';
 import { PeliculasService } from './services/peliculas.service';
+import { SeriesService } from './services/series.service';
 import { HttpClientModule } from '@angular/common/http';
 import { PuntuacionComponent } from './components/puntuacion/puntuacion.component';
 import { FormularioTemplateComponent } from './components/formulario-template/formulario-template.component';
 import { FormsModule } from '@angular/forms';
 import { RegistroConfirmarComponent } from './components/registro-confirmar/registro-confirmar.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -37,10 +39,12 @@ import { RegistroConfirmarComponent } from './components/registro-confirmar/regi
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatTabsModule
   ],
   providers: [
-    PeliculasService
+    PeliculasService,
+    SeriesService
   ],
   bootstrap: [AppComponent]
 })

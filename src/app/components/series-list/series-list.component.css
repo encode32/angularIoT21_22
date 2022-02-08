@@ -1,0 +1,22 @@
+.seriesList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.listado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+mat-card-content{
+    width: 220px;
+}
+
+mat-card-header {
+    width: 220px;
+}
+
+.card {
+    margin: 5px;
+}

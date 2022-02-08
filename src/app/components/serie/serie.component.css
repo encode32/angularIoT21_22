@@ -1,0 +1,78 @@
+.serie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cabecera {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    color: white;
+}
+
+.season {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.seasoninfo {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 60vw;
+}
+
+.episodes {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.info {
+    margin-left: 20px;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.caratula {
+    z-index: 2;
+}
+
+.transparencia {
+    position: absolute;
+    opacity: 0.6;
+    background-color: white;
+    z-index: 1;
+}
+.creditos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+mat-card {
+    margin: 2.5px;
+}
+
+mat-card-header {
+    max-width: 100px;
+}
+
+mat-tab-group {
+    margin-bottom: 48px;
+}

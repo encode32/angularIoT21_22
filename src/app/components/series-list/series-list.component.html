@@ -1,1 +1,28 @@
-<p>series-list works!</p>
+<div class="seriesList">
+    <mat-progress-bar mode="indeterminate" *ngIf="seriesData.length === 0"></mat-progress-bar>
+    <div>
+        <h2>Peliculas Recientes</h2>
+    </div>
+    <div class="listado">
+        <div *ngFor="let serie of seriesData">
+            <mat-card class="card">
+                <mat-card-header>
+                    <mat-card-title>{{ serie.name | slice:0:15 }}...</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src="https://image.tmdb.org/t/p/w220_and_h330_face/{{ serie.poster_path }}">
+                <mat-card-content>
+                    <p>
+                    {{ serie.overview | slice:0:150 }}...
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button (click)="goToSerie(serie.id, serie.name)">+ INFO</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+    <button mat-button color="primary" (click)="loadMoreSeries()" *ngIf="page !== totalPages">
+        Cargar + 
+        <mat-spinner *ngIf="numSeries === seriesData.length"></mat-spinner>
+    </button>
+</div>
