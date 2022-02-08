@@ -18,7 +18,7 @@ import { PuntuacionComponent } from './components/puntuacion/puntuacion.componen
 import { FormularioTemplateComponent } from './components/formulario-template/formulario-template.component';
 import { FormsModule } from '@angular/forms';
 import { RegistroConfirmarComponent } from './components/registro-confirmar/registro-confirmar.component';
-import { MatTabsModule } from '@angular/material/tabs';
+
 
 @NgModule({
   declarations: [
@@ -39,8 +39,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    FormsModule,
-    MatTabsModule
+    FormsModule
   ],
   providers: [
     PeliculasService,
